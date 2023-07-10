@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Caveat+Brush|Gloria+Hallelujah|Gochi+Hand|Kalam:700|Love+Ya+Like+A+Sister');
+
+h1 {
+
+  margin-top: 2em;
+  font-size: 7em;
+  margin: auto;
+  color: grey;
+  font-family: 'Love Ya Like A Sister';
+  width: 75%;
+  text-align: center;
+  font-weight: bolder;
+
+
+}
+
+h3 {
+  margin-left: 6%;
+  border-left: 1px solid black;
+  border-width: .5em;
+  border-color: purple;
+  width: 10%;
+  padding-left: 1%;
+  font-family: 'Gloria Hallelujah';
+  font-weight: 700;
+  color: grey;
+}
+
+nav {
+
+  display: flex;
+  justify-content: center;
+}
+
+a {
+
+  color: purple;
+  margin: 1%;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  font-size: 2em;
+
+}
+
+a:active {
+
+  color: grey;
+
+}
+
+form {
+
+  display: block;
+  justify-content: center;
+  margin-left: 6%;
+  font-family: 'Amatic SC';
+  font-size: 2em;
+
+}
+
+p {
+
+  margin-left: 6%;
+  border-left: 1px solid black;
+  border-width: .5em;
+  border-color: purple;
+  color: grey;
+  padding-left: 1%;
+  width: 10%;
+  font-family: 'Gloria Hallelujah';
+  font-weight: 700;
+  /*font-size: .7em;*/
+
+}
+
+button {
+
+  font-weight: bolder;
+  background-color: grey;
+  color: purple;
+  font-family: 'Love Ya Like A Sister';
+  font-weight: bolder;
+  padding: .5em;
+  width: 5%;
+
+}
