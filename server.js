@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const mustacheExpress = require('mustache-express');
 const session = require('express-session');
-const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
 
 const morgan = require('morgan');
@@ -16,8 +15,8 @@ const login = require("./routes/login");
 const logout = require("./routes/logout");
 const signup = require("./routes/signup");
 
-app.use(bodyParser.urlencoded({ extended: false}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
 app.use(expressValidator());
 
 // app.use(express.static(path.join(__dirname,'public')));
@@ -32,7 +31,7 @@ app.use(session({
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set ('view engine', 'mustache');
-app.set('layout', 'baselayout');
+app.set('layout', 'baseLayout');
 
 app.use(morgan('dev'));
 
