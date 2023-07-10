@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gabble</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <h3>Latest Gabbles</h3>
+    <a href="/gab">Create A New Gabble</a>
+    <div class="messageList">
+      {{#array}}
+          <p><span><strong>{{username}}</strong>:</span><span>{{gab}}</span></p>
+          <p>{{likes}}</p>
+          {{#delete}}
+            <form  action="/delete" method="post">
+              <button type="submit" name="deleteKey" value="{{id}}">Delete</button>
+            </form>
+          {{/delete}}
+           <form action="/likes" method="post">
+             <button type="submit" name="likeButton" value="{{id}}">Like</button>
+           </form>
+      {{/array}}
+    </div>
+    <a href="/logout">Logout</a>
+  </body>
+</html>

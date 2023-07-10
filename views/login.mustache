@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gabbles</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <h3>Welcome Back Gabbler!</h3>
+    {{#wrong}}
+      {{.}}
+    {{/wrong}}
+    <form action="login" method="post">
+      <label>username</label>
+      <input type="text" name="username" value="" placeholder="username"></input><br>
+      <label>password</label>
+      <input type="password" name="password" value="" placeholder="password"></input><br>
+      <button type="submit" name="login">Login</button>
+    </form>
+    <p>If you haven't signed up, become a Gabbler! <a href="/signup">here.</a></p>
+  </body>
+</html>

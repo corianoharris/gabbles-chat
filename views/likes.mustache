@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gabbles</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+      <a href="/">Your Gabbles</a>
+      <a href="/gab">Create A New Gabble</a>
+    <h3>Post likes</h3>
+    {{#array}}
+      <span>{{username}}</span>
+    {{/array}}
+    <a href="/logout">Logout</a>
+  </body>
+</html>
